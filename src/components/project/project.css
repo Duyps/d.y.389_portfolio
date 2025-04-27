@@ -1,0 +1,43 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .project-row {
+    height: 50vh;
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .project-image {
+    width: 23%;
+    height: 80%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.1s ease;
+  }
+  
+  .project-info {
+    flex: 3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    p{
+        line-height: 150%;
+    }
+  }
+  
+  .project-placeholder {
+    text-align: center;
+    color: #888;
+  }
+  

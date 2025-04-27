@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    font-weight: bold;
+    list-style: none;
+    a{
+      text-decoration: none;
+      color: white;
+      list-style: none;
+    }
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-family: var(--font-family);
+    padding: 8px 12px;
+  }
+
+  

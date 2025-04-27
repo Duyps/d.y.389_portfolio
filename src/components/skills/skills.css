@@ -1,0 +1,55 @@
+.page-section {
+  height: 300vh;
+  position: relative;
+  padding-top: 100vh;
+  color: white;
+  font-family: var(--font-family);
+}
+
+.content-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+}
+
+.skill-title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 64px;
+  font-weight: bold;
+  color: #222;
+  transform: translate(-50%, -50%); /* mặc định */
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-item {
+  font-size: 24px;
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.content-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill{
+  font-size: 9rem;
+  opacity: 0.3;
+  filter: blur(8px);
+  margin-left: 50px;
+}

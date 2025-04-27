@@ -1,0 +1,64 @@
+.contact-container {
+    display: flex;
+    height: 100vh;
+    padding: 4rem;
+    box-sizing: border-box;
+  }
+  
+  .contact-left {
+    flex-basis: 55vw; /* 👈 60% chiều rộng */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* mặc định align left */
+  }
+  
+  .contact-word {
+    font-size: clamp(5rem, 10vw, 14rem);
+    line-height: 100%;
+    font-family: var(--font-contact);
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    width: 100%; /* để căn chỉnh được theo width */
+  }
+  
+  .contact-word.center {
+    text-align: right; /* 👈 Nếu có class 'center' thì align right */
+  }
+  
+  .contact-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+  }
+  span{
+    color: white;
+    font-family: var(--font-contact);
+    font-size: 1.5rem;
+    opacity: 0.5;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-item:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  .arrow {
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+  }
+  
