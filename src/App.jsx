@@ -16,7 +16,6 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence mode="wait">
-      <Header />
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -31,6 +30,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router> {/* HashRouter ở đây */}
+      <Header/>
       <AnimatedRoutes />
     </Router>
   );
