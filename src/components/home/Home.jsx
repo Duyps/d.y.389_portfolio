@@ -52,7 +52,7 @@ function Home() {
           damping: 25,
         }}
       >
-        HELLO, I'M <br /> NGUYEN QUOC DUY
+        HELLO, I'M <br /> NGUYEN QUOC DUYyyyy
       </motion.h1>
 
       <div
